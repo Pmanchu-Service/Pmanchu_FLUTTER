@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:pmanchu/pages/login_page.dart';
+import 'package:pmanchu/pages/login/login_page.dart';
 
 void main()=>runApp(
-  const MaterialApp(
+  MaterialApp(
+    theme: ThemeData(
+      fontFamily: 'Pretendard'
+    ),
     debugShowCheckedModeBanner: false,
-    home: LoginPage()
+    home: const LoginPage()
   )
 );

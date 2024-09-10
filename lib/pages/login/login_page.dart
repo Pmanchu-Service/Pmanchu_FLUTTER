@@ -18,11 +18,11 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 20),
-            Image.asset("assets/logo_with_text.png", width: 160),
-            const SizedBox(height: 4),
+            const SizedBox(height: 30),
+            Image.asset("assets/logo_with_text.png", width: 120),
+            const SizedBox(height: 12),
             const Text("로그인", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
-            const SizedBox(height: 4),
+            const SizedBox(height: 2),
             RichText(
               text: const TextSpan(
                 children: [
@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Image.asset("assets/github.png", height: 25),
+                  Image.asset("assets/github.png", height: 24),
                   const SizedBox(width: 10),
                   const Text("github로 로그인하기", style: TextStyle(color: Colors.white, fontSize: 16))
                 ]
