@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pmanchu/design/button.dart' as button;
+import 'package:pmanchu/pages/sign_up/sign_up_page.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -35,7 +36,13 @@ class _LoginPageState extends State<LoginPage> {
             const Spacer(),
             button.FilledButton(
               color: const Color(0xFF1B1F23),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context)=>const SignUpPage()
+                  )
+                );
+              },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
