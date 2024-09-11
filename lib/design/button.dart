@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:pmanchu/design/color.dart';
 
-class FilledButton extends StatefulWidget {
+class ColoredButton extends StatefulWidget {
   final Widget child;
   final Color color;
   final VoidCallback onPressed;
-  const FilledButton({super.key, required this.child, required this.color, required this.onPressed});
+  const ColoredButton({super.key, required this.child, required this.color, required this.onPressed});
 
   @override
-  State<FilledButton> createState() => _FilledButtonState();
+  State<ColoredButton> createState() => _ColoredButtonState();
 }
-
-class _FilledButtonState extends State<FilledButton> {
+class _ColoredButtonState extends State<ColoredButton> {
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -48,7 +47,6 @@ class PrimaryButton extends StatefulWidget {
   @override
   State<PrimaryButton> createState() => _PrimaryButtonState();
 }
-
 class _PrimaryButtonState extends State<PrimaryButton> {
   @override
   Widget build(BuildContext context) {

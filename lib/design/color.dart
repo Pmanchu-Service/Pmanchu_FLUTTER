@@ -15,3 +15,8 @@ const Color gray5 = Color(0xFFAAAAAA);
 const Color gray6 = Color(0xFF9E9E9E);
 const Color gray7 = Color(0xFF959595);
 const Color gray8 = Color(0xFF8B8B8B);
+
+const Color system1 = Color(0xFFF9291C);
+const Color system2 = Color(0xFF2997FF);
+const Color system3 = Color(0xFFFFFFFF);
+const Color system4 = Color(0xFF2F2F2F);

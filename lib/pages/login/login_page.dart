@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
               )
             ),
             const Spacer(),
-            button.FilledButton(
+            button.ColoredButton(
               color: const Color(0xFF1B1F23),
               onPressed: () {
                 Navigator.of(context).push(
