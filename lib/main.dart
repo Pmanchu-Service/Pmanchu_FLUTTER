@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pmanchu/pages/login/login_page.dart';
+import 'package:pmanchu/pages/splash/splash_page.dart';
 
 void main()=>runApp(
   MaterialApp(
@@ -8,6 +8,6 @@ void main()=>runApp(
       scaffoldBackgroundColor: Colors.white
     ),
     debugShowCheckedModeBanner: false,
-    home: const LoginPage()
+    home: const SplashPage()
   )
 );

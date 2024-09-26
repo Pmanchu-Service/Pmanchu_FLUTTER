@@ -52,7 +52,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
   Widget build(BuildContext context) {
     return InkWell(
       enableFeedback: widget.enabled,
-      onTap: widget.onPressed,
+      onTap: widget.enabled ? widget.onPressed : null,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: Container(

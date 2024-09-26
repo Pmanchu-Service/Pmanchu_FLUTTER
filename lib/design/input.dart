@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:pmanchu/design/color.dart';
 
 class InputText extends StatefulWidget {
-  final void Function(String) onChanged;
+  final void Function(String)? onChanged;
+  final void Function(String)? onSubmitted;
+  final TextEditingController? controller;
   final int? maxLength;
   final String placeholder;
-  const InputText({super.key, required this.onChanged, required this.maxLength, required this.placeholder});
+  final int? defaultLine;
+  const InputText({super.key, this.onChanged, this.onSubmitted, this.controller, this.maxLength, this.placeholder = "", this.defaultLine});
 
   @override
   State<InputText> createState() => _InputTextState();
@@ -15,11 +18,15 @@ class _InputTextState extends State<InputText> {
   @override
   Widget build(BuildContext context) {
     return TextField(
-      onChanged: widget.onChanged,
+      controller: widget.controller,
+      onChanged: widget.onChanged??(_){},
+      onSubmitted: widget.onSubmitted??(_){},
       maxLength: widget.maxLength,
       cursorColor: Colors.black,
       cursorWidth: 1,
       cursorHeight: 16,
+      maxLines: (widget.defaultLine != null) ? null : 1,
+      minLines: widget.defaultLine,
       decoration: InputDecoration(
         filled: true,
         fillColor: gray1,
