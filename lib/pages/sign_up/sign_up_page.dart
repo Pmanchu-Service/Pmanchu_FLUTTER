@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:pmanchu/design/button.dart';
+import 'package:pmanchu/pages/main/main_page.dart';
 import 'package:pmanchu/pages/sign_up/steps/sign_up_step_name.dart';
 import 'package:pmanchu/pages/sign_up/steps/sign_up_step_introduce.dart';
 import 'package:pmanchu/pages/sign_up/steps/sign_up_step_stack.dart';
@@ -97,7 +98,10 @@ class _SignUpPageState extends State<SignUpPage> {
             PrimaryButton(
               onPressed: _currentPage == 3 ?
               () {
-                // Navigator
+                Navigator.pushReplacement(
+                  context,
+                  MaterialPageRoute(builder: (context) => const MainPage(),)
+                );
               } :
               () {
                 setState(() {
