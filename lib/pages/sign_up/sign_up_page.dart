@@ -55,7 +55,7 @@ class _SignUpPageState extends State<SignUpPage> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 80),
+            const SizedBox(height: 40),
             Image.asset("assets/sign_up_banner.png", width: 210),
             Text(_titles[_currentPage], style: const TextStyle(fontSize: 20)),
             const SizedBox(height: 80),

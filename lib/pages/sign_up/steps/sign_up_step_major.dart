@@ -11,13 +11,13 @@ class SignUpStepMajor extends StatefulWidget {
 
 class SignUpStepMajorState extends State<SignUpStepMajor> {
   Map<String, bool> items = {
-    'Front-end': true,
+    'Front-end': false,
     'Embedded': false,
     'Back-end': false,
     'Game': false,
     'DevOps': false,
-    'Design': true,
-    'iOS': true,
+    'Design': false,
+    'iOS': false,
     'Security': false,
     'AOS': false,
     'AI': false,
@@ -36,10 +36,10 @@ class SignUpStepMajorState extends State<SignUpStepMajor> {
           children: [
             Checkbox(
               value: items[category],
-              activeColor: main1,
+              activeColor: main4,
               checkColor: Colors.white,
               side: BorderSide(
-                color: items[category]! ? main1 : Colors.grey,
+                color: items[category]! ? main4 : Colors.grey,
                 width: 2
               ),
               onChanged: (bool? value) {

@@ -37,7 +37,7 @@ class CircularImagePickerState extends State<CircularImagePicker> {
             height: 120,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              border: Border.all(color: main2, width: 5),
+              border: _imageFile == null ? Border.all(color: main2, width: 5) : Border.all(color: Colors.transparent, width: 0),
             ),
             child: ClipOval(
               child: _imageFile == null
@@ -45,15 +45,16 @@ class CircularImagePickerState extends State<CircularImagePicker> {
               : Image.file(_imageFile!, fit: BoxFit.cover)
             )
           ),
-          Positioned(
-            right: 8,
-            bottom: 8,
+          if (_imageFile == null) Positioned(
+            width: 120,
+            height: 120,
             child: GestureDetector(
               onTap: _pickImage,
               child: Image.asset(
                 'assets/camera.png',
-                width: 30,
-                height: 30
+                color: const Color(0xFF757575),
+                width: 80,
+                height: 80
               )
             )
           )

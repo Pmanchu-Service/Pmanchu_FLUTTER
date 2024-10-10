@@ -52,13 +52,13 @@ class _PrimaryButtonState extends State<PrimaryButton> {
   Widget build(BuildContext context) {
     return InkWell(
       enableFeedback: widget.enabled,
-      onTap: widget.enabled ? widget.onPressed : null,
+      onTap: widget.enabled ? widget.onPressed : (){},
       child: ClipRRect(
         borderRadius: BorderRadius.circular(10),
         child: Container(
           height: 50,
           decoration: BoxDecoration(
-            color: widget.enabled ? main2 : gray4,
+            color: widget.enabled ? main4 : gray4,
             boxShadow: [
               BoxShadow(
                 color: Colors.black.withOpacity(0.1),

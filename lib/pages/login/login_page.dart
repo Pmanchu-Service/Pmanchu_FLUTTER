@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pmanchu/design/button.dart' as button;
+import 'package:pmanchu/design/color.dart';
 import 'package:pmanchu/pages/sign_up/sign_up_page.dart';
 
 class LoginPage extends StatefulWidget {
@@ -21,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(height: 80),
+              const SizedBox(height: 40),
               Image.asset("assets/logo_with_text.png", width: 180),
               const SizedBox(height: 18),
               const Text("로그인", style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold)),
@@ -30,7 +31,7 @@ class _LoginPageState extends State<LoginPage> {
                 text: const TextSpan(
                   children: [
                     TextSpan(text: "깃허브로 ", style: TextStyle(color: Colors.black, fontSize: 20)),
-                    TextSpan(text: "프만추", style: TextStyle(color: Color(0xFF74A993), fontSize: 20)),
+                    TextSpan(text: "프만추", style: TextStyle(color: main4, fontSize: 20)),
                     TextSpan(text: "에 로그인 하세요", style: TextStyle(color: Colors.black, fontSize: 20))
                   ]
                 )

@@ -1,10 +1,10 @@
 import 'dart:ui';
 
-const Color main1 = Color(0xFFDCEC9D);
-const Color main2 = Color(0xFFABD794);
-const Color main3 = Color(0xFF74A993);
-const Color main4 = Color(0xFF588D80);
-const Color main5 = Color(0xFF40726F);
+const Color main1 = Color(0xFFFFE7AF);
+const Color main2 = Color(0xFFFFD97F);
+const Color main3 = Color(0xFFFFCB53);
+const Color main4 = Color(0xFFFFBD22);
+const Color main5 = Color(0xFFFFB300);
 
 
 const Color gray1 = Color(0xFFFAFAFA);
